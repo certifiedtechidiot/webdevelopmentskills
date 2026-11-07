@@ -1,32 +1,32 @@
 # ⚡ Web Development Skills (`/webdevelopment`)
 
-> **The Unified 3-in-1 Super Skill for AI Coding Assistants**  
-> Combines **Get Shit Done (GSD)**, **Hallmark (Anti-AI-Slop)**, and **AI Design Skill** into a single cohesive command.
+> **The Unified 4-in-1 Master Skill for AI Coding Assistants**  
+> Combines **Get Shit Done (GSD)**, **Hallmark (Anti-AI-Slop)**, **AI Design Skill**, and **Taste Skill (tasteskill 2.5)** into one cohesive command.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Runtime: Universal](https://img.shields.io/badge/Runtime-Antigravity%20%7C%20Claude%20Code%20%7C%20Cursor%20%7C%20Codex-brightgreen.svg)]()
 
-Instead of juggling and remembering separate slash commands (`/gsd-new-project`, `/hallmark`, `/landing-page-design`, `/sloplint`, etc.), **`/webdevelopment`** triggers all three frameworks simultaneously in an automated, disciplined loop.
+Instead of juggling and remembering separate slash commands (`/gsd-new-project`, `/hallmark`, `/landing-page-design`, `/taste`, `/sloplint`, etc.), **`/webdevelopment`** triggers all four frameworks simultaneously in an automated, disciplined loop.
 
 ---
 
-## 🌟 The 3 Integrated Pillars
+## 🌟 The 4 Integrated Pillars
 
 ```
-                     ┌──────────────────────────────────────────────┐
-                     │          /webdevelopment Pipeline            │
-                     └──────────────────────┬───────────────────────┘
-                                            │
-               ┌────────────────────────────┼────────────────────────────┐
-               ▼                            ▼                            ▼
-   ┌───────────────────────┐   ┌─────────────────────────┐   ┌──────────────────────────┐
-   │  Get Shit Done (GSD)  │   │     Hallmark Floor      │   │     AI Design Skill      │
-   ├───────────────────────┤   ├─────────────────────────┤   ├──────────────────────────┤
-   │ • Spec-driven build   │   │ • Anti-AI-slop standard │   │ • 1 Offer/Audience/Action│
-   │ • .planning/ state    │   │ • Token blocks at :root │   │ • Conversion copywriting │
-   │ • Phased execution    │   │ • Distinct typography   │   │ • Strict 4px/8px grid    │
-   │ • Verified milestones │   │ • Automated sloplint    │   │ • Type scale rhythm      │
-   └───────────────────────┘   └─────────────────────────┘   └──────────────────────────┘
+                     ┌────────────────────────────────────────────────────────┐
+                     │               /webdevelopment Pipeline                 │
+                     └───────────────────────────┬────────────────────────────┘
+                                                 │
+            ┌───────────────────┬────────────────┴───────────────────┬───────────────────┐
+            ▼                   ▼                                    ▼                   ▼
+   ┌─────────────────┐ ┌─────────────────┐                  ┌─────────────────┐ ┌─────────────────┐
+   │    GSD Core     │ │ Hallmark Floor  │                  │ AI Design Skill │ │   Taste Skill   │
+   ├─────────────────┤ ├─────────────────┤                  ├─────────────────┤ ├─────────────────┤
+   │ • Spec build    │ │ • Anti-AI-slop  │                  │ • 1 Offer/Action│ │ • figma & x.ai  │
+   │ • .planning/ mem│ │ • :root tokens  │                  │ • Conversion UX │ │ • Screen rhythm │
+   │ • Phase loop    │ │ • Typography    │                  │ • 4px/8px grid  │ │ • Micro-anims   │
+   │ • Verification  │ │ • sloplint.mjs  │                  │ • Copy formulas │ │ • Shader moments│
+   └─────────────────┘ └─────────────────┘                  └─────────────────┘ └─────────────────┘
 ```
 
 ### 1. 🏗️ Get Shit Done (GSD) — Engineering & State Memory
@@ -46,6 +46,12 @@ Instead of juggling and remembering separate slash commands (`/gsd-new-project`,
 * **Harmonious Typography**: Snapped to the standard type scale (`text-xs` through `text-6xl`), negative tracking on display headers, `text-wrap: balance` on headlines, and `text-wrap: pretty` on body copy.
 * **Spacing Grid**: Strict 4px/8px layout rhythm (`gap-2`, `gap-4`, `p-6`, `py-12`, `py-20`).
 * **Redesign Diagnostic**: Capable of auditing and upgrading existing websites in place without breaking functionality.
+
+### 4. ✨ Taste Skill 2.5 — The figma.com & x.ai Design Bar
+* **Screen-Height Rhythm**: Hero stands alone on the first screen. Subsequent sections are exactly 1 or 2 screens tall at `1440x900`. Equal left/right content margins across all viewports.
+* **Real Visuals & No Captions**: Never put captions under images or diagrams (credits live in a single footer line). Real full-color product UI icons (e.g. GitHub, Stripe, Linear) and diagram visuals (hub-and-spoke, processing pipelines).
+* **Quiet Micro-Interactions**: Linked cards lift 2px with crisp shadows, photo frames zoom 1.02-1.03x, buttons step on hover and depress on click, card loops cycle seamlessly.
+* **Trade Discrimination**: Shader effects and interactive moments reserved strictly for technical subjects (AI, software, gaming, fintech, hardware); physical businesses (cafes, studios, shops) receive authentic photography.
 
 ---
 
@@ -89,7 +95,7 @@ Simply invoke **`/webdevelopment`** followed by your task:
 ```text
 /webdevelopment build a modern SaaS landing page for an AI developer platform
 ```
-*Gathers intake, initializes `.planning/`, generates token palette, builds the 1280x800 hero, executes sections, and runs `sloplint`.*
+*Gathers intake, initializes `.planning/`, generates token palette, builds the 1280x800 hero, applies screen-height rhythm and micro-animations, executes sections, and runs `sloplint`.*
 
 ### 2. Redesign an Existing Page
 ```text
@@ -115,13 +121,14 @@ webdevelopmentskills/
 ├── LICENSE                           # MIT License
 └── skills/
     ├── webdevelopment/               # The unified master skill
-    │   ├── SKILL.md                  # Comprehensive orchestration rules
-    │   ├── scripts/
-    │   │   └── sloplint.mjs          # Hallmark anti-slop linter
+    │   ├── SKILL.md                  # 4-in-1 orchestration rules
+    │   ├── scripts/                  # sloplint.mjs, consistency.mjs, etc.
     │   └── references/
+    │       ├── taste/                # Taste skill references, cards, motion, moments
     │       ├── hallmark/             # Themes, gates, layout, craft guides
     │       ├── ai-design/            # Landing page guidelines & audit checklists
     │       └── gsd/                  # GSD workflow templates & references
+    ├── taste-skill/                  # Standalone Taste Skill (tasteskill 2.5)
     ├── hallmark/                     # Standalone Hallmark skill
     ├── landing-page-design/          # Standalone Landing Page Design skill
     └── redesign-existing-projects/   # Standalone Redesign Audit skill
