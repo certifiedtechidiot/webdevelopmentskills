@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Production SaaS branch isolation card built to director-level craft with Hallmark anti-slop standards.">
+  <title>SaaS Feature Card - Director-Level Craft (AFTER)</title>
+  <style>
+    /* Hallmark: Linear Theme Design System (v1.3.0) */
+    :root {
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+      /* Color Tokens (Dark Linear / Supabase palette - no pure #fff) */
+      --color-bg-canvas: #0c0d0e;
+      --color-bg-surface: #141517;
+      --color-bg-surface-hover: #1a1c1e;
+      --color-bg-surface-active: #1e2023;
+      --color-bg-subtle: #202226;
+
+      --color-border-subtle: rgba(255, 255, 255, 0.08);
+      --color-border-hover: rgba(255, 255, 255, 0.16);
+      --color-border-focus: #5e6ad2;
+
+      --color-text-primary: #f4f5f6;
+      --color-text-secondary: #9da2ab;
+      --color-text-muted: #6b7079;
+
+      --color-accent: #5e6ad2;
+      --color-accent-hover: #6f7be8;
+      --color-accent-active: #525cc0;
+      --color-accent-contrast: #f8f9fa;
+      --color-accent-ink: #f8f9fa;
+
+      /* Elevation Tokens */
+      --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
+      --shadow-card-hover: 0 1px 3px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+
+      /* Motion Tokens */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --duration-fast: 150ms;
+      --duration-normal: 200ms;
+
+      /* Layout Tokens */
+      --radius-md: 8px;
+      --radius-sm: 6px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-6: 24px;
+      --space-8: 32px;
+    }
+
+    ::selection {
+      background-color: var(--color-accent);
+      color: var(--color-accent-contrast);
+    }
+
+    html {
+      scrollbar-color: var(--color-bg-subtle) var(--color-bg-canvas);
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-bg-canvas);
+      color: var(--color-text-primary);
+      font-family: var(--font-family);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: clip;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: var(--space-6);
+      box-sizing: border-box;
+    }
+
+    /* Production Craft Card */
+    .card {
+      position: relative;
+      background-color: var(--color-bg-surface);
+      color: var(--color-text-primary);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-md);
+      padding: var(--space-8);
+      max-width: 400px;
+      width: 100%;
+      box-shadow: var(--shadow-card);
+      /* Strict transition discipline - NEVER transition: all */
+      transition: 
+        border-color var(--duration-normal) var(--ease-out),
+        box-shadow var(--duration-normal) var(--ease-out),
+        background-color var(--duration-normal) var(--ease-out);
+    }
+
+    .card:hover {
+      border-color: var(--color-border-hover);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    /* Icon Header */
+    .card-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background-color: var(--color-bg-subtle);
+      border: 1px solid var(--color-border-subtle);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-6);
+    }
+
+    .card-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 0 0 var(--space-2) 0;
+      color: var(--color-text-primary);
+      letter-spacing: -0.015em;
+    }
+
+    .card-description {
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--color-text-secondary);
+      margin: 0 0 var(--space-6) 0;
+    }
+
+    /* Technical Spec Detail (Clean layout, NOT a nested card) */
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-3) 0;
+      border-top: 1px solid var(--color-border-subtle);
+      margin-bottom: var(--space-6);
+      font-size: 13px;
+    }
+
+    .spec-label {
+      color: var(--color-text-muted);
+    }
+
+    .spec-value {
+      font-family: var(--font-mono);
+      color: var(--color-text-secondary);
+      font-size: 12px;
+    }
+
+    /* Primary Interactive CTA with Complete State Coverage */
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 38px;
+      padding: 0 var(--space-4);
+      background-color: var(--color-accent);
+      color: var(--color-accent-ink);
+      font-family: var(--font-family);
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      box-sizing: border-box;
+      /* Intentional property-specific transitions */
+      transition: 
+        background-color var(--duration-fast) var(--ease-out),
+        border-color var(--duration-fast) var(--ease-out),
+        opacity var(--duration-fast) var(--ease-out);
+    }
+
+    /* State 2: Hover */
+    .btn-action:hover:not(:disabled) {
+      background-color: var(--color-accent-hover);
+    }
+
+    /* State 3: Active */
+    .btn-action:active:not(:disabled) {
+      background-color: var(--color-accent-active);
+    }
+
+    /* State 4: Focus-Visible (Keyboard Accessible) */
+    .btn-action:focus-visible {
+      outline: 2px solid var(--color-border-focus);
+      outline-offset: 2px;
+    }
+
+    /* State 5: Disabled with WCAG AA compliance */
+    .btn-action:disabled,
+    .btn-action[aria-disabled="true"] {
+      opacity: 0.6;
+      cursor: not-allowed;
+      background-color: var(--color-bg-subtle);
+      border-color: var(--color-border-subtle);
+      color: var(--color-text-secondary);
+    }
+
+    /* Accessibility: Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <article class="card">
+      <div class="card-icon" aria-hidden="true">
+        <!-- Crisp Monochromatic SVG Icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+        </svg>
+      </div>
+
+      <h2 class="card-title">Instant Branch Isolation</h2>
+      <p class="card-description">
+        Clone isolated PostgreSQL environments for every pull request with copy-on-write storage in under 3 seconds.
+      </p>
+
+      <div class="spec-row">
+        <span class="spec-label">Provision latency</span>
+        <span class="spec-value">&lt; 2.8s median</span>
+      </div>
+
+      <button type="button" class="btn-action">
+        Enable Branching
+      </button>
+    </article>
+  </main>
+
+</body>
+</html>

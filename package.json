@@ -1,8 +1,13 @@
 {
   "name": "@certifiedtechidiot/webdevelopmentskills",
-  "version": "1.0.0",
-  "description": "Unified Web Development Skill combining Get Shit Done (GSD), Hallmark (Anti-AI-Slop), and AI Design Skill into one cohesive workflow.",
-  "main": "skills/webdevelopment/SKILL.md",
+  "version": "1.3.0",
+  "description": "Unified 6-in-1 Web Development System combining Get Shit Done (GSD), Hallmark (Anti-AI-Slop), AI Design Skill, Taste Skill (2.5), Impeccable (4.8), and OpenDesign into one cohesive workflow.",
+  "main": "SKILL.md",
+  "scripts": {
+    "lint": "node scripts/sloplint.mjs",
+    "consistency": "node scripts/consistency.mjs",
+    "test": "node scripts/sloplint.mjs references/before-after/saas-card-after.html references/before-after/hero-section-after.html"
+  },
   "keywords": [
     "antigravity",
     "claude-code",
@@ -15,6 +20,9 @@
     "gsd",
     "hallmark",
     "ai-design",
+    "taste-skill",
+    "impeccable",
+    "open-design",
     "anti-slop"
   ],
   "author": "certifiedtechidiot",

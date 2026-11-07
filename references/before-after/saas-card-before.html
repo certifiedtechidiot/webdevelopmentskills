@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Feature Card - Generic AI Slop (BEFORE)</title>
+  <!--
+    HALLMARK VIOLATIONS IN THIS FILE:
+    1. Purple-to-blue generic gradient border and glowing backgrounds.
+    2. Card nested inside another card.
+    3. Emojis used as feature icons (🚀 and ✨).
+    4. Fake, unverifiable metrics ("10,000+ happy teams", "99.9% faster").
+    5. transition: all 0.3s ease.
+    6. Animates layout dimensions / scale blowup on hover.
+    7. Hardcoded untokenized hex colors everywhere.
+    8. Missing interactive states (no :focus-visible, no disabled, no loading).
+  -->
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+    }
+
+    /* VIOLATION: Purple-blue gradient outer card */
+    .outer-card {
+      background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #3b82f6 100%);
+      padding: 3px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(168, 85, 247, 0.4);
+      /* VIOLATION: transition: all */
+      transition: all 0.3s ease;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    /* VIOLATION: Animating layout / hover lift blowup */
+    .outer-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 50px rgba(99, 102, 241, 0.6);
+    }
+
+    /* VIOLATION: Card nested inside card */
+    .inner-card {
+      background: #1e1b4b;
+      padding: 32px;
+      border-radius: 17px;
+    }
+
+    .icon-wrapper {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin: 0 0 8px 0;
+      background: linear-gradient(90deg, #ec4899, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: #94a3b8;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0 0 20px 0;
+    }
+
+    /* VIOLATION: Another nested card */
+    .nested-stat-box {
+      background: #312e81;
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      border: 1px solid #4338ca;
+    }
+
+    .stat-number {
+      font-size: 28px;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* VIOLATION: Untokenized button with transition: all and no focus-visible */
+    .btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(90deg, #8b5cf6, #ec4899);
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 10px;
+      border: none;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ANTI-PATTERN: Nested gradient cards with emojis & fake claims -->
+  <div class="outer-card">
+    <div class="inner-card">
+      <div class="icon-wrapper">🚀✨</div>
+      <h3>Hyper-Scale AI Engine</h3>
+      <p>Seamlessly revolutionize and supercharge your cloud ecosystem with next-gen autonomous capabilities that optimize your pipeline.</p>
+      
+      <!-- VIOLATION: Nested card inside card with fake metric -->
+      <div class="nested-stat-box">
+        <div class="stat-number">99.9% Faster</div>
+        <div class="stat-label">Trusted by 10,000+ fast-growing startups</div>
+      </div>
+
+      <a href="#" class="btn">Deploy Now ⚡</a>
+    </div>
+  </div>
+
+</body>
+</html>

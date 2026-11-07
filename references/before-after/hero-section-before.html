@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section - Generic AI Slop (BEFORE)</title>
+  <!--
+    AI SLOP HALLMARK VIOLATIONS IN THIS HERO:
+    1. 1600px tall scrolling hero with massive excessive padding (fails 1280x800 single screen rule).
+    2. Purple-to-blue glowing mesh gradient background.
+    3. Floating emoji badges (✨ AI-Powered Magic ✨).
+    4. Vague, meaningless headline: "Supercharge Your Future With AI-Driven Synergy".
+    5. Four competing CTAs (violates One Offer -> One Audience -> One Primary Action).
+    6. Nested cards inside a mock browser window.
+    7. 100vw container causing horizontal overflow and layout spills.
+    8. transition: all 0.4s on everything.
+  -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at 50% 20%, #4f46e5 0%, #1e1b4b 60%, #09090b 100%);
+      color: #ffffff;
+      font-family: system-ui, -apple-system, sans-serif;
+      width: 100vw; /* VIOLATION: 100vw spills scrollbar */
+    }
+
+    /* VIOLATION: Fails 1280x800 hero floor - extends beyond 1500px */
+    .hero-wrapper {
+      padding: 160px 40px 200px 40px;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* VIOLATION: Emoji pill badge with gradient border */
+    .ai-pill {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 9999px;
+      background: linear-gradient(90deg, #ec4899, #8b5cf6, #3b82f6);
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 28px;
+      box-shadow: 0 0 25px rgba(236, 72, 153, 0.5);
+    }
+
+    h1 {
+      font-size: 64px;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #ffffff 0%, #c084fc 50%, #60a5fa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 20px;
+      color: #cbd5e1;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      line-height: 1.7;
+    }
+
+    /* VIOLATION: Four competing CTAs */
+    .cta-cluster {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 80px;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(90deg, #ec4899, #8b5cf6);
+      color: white;
+      padding: 18px 36px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+
+    .btn-gradient:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.6);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 18px 36px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .btn-outline {
+      border: 1px solid #8b5cf6;
+      color: #c084fc;
+      padding: 18px 36px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    /* VIOLATION: Mock UI card with nested cards inside nested cards */
+    .preview-window {
+      background: #1e1b4b;
+      border: 2px solid #6366f1;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .preview-card {
+      background: #312e81;
+      padding: 24px;
+      border-radius: 14px;
+      border: 1px solid #4338ca;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-wrapper">
+    <div class="ai-pill">✨ The Next-Gen AI Revolution is Here ✨</div>
+    <h1>Supercharge Your Future With AI-Driven Synergy</h1>
+    <p>Unlock exponential breakthroughs and seamlessly transform every touchpoint of your digital operations with our enterprise-ready paradigm shift.</p>
+
+    <!-- ANTI-PATTERN: Multiple competing actions -->
+    <div class="cta-cluster">
+      <a href="#" class="btn-gradient">Get Started Free 🚀</a>
+      <a href="#" class="btn-secondary">Book Enterprise Demo</a>
+      <a href="#" class="btn-outline">Watch 2-Min Video</a>
+      <a href="#" class="btn-secondary">Contact Sales Team</a>
+    </div>
+
+    <!-- ANTI-PATTERN: Nested cards mock window -->
+    <div class="preview-window">
+      <div style="font-size: 14px; color: #a5b4fc; text-align: left;">Live Metrics Overview Dashboard</div>
+      <div class="preview-grid">
+        <div class="preview-card">
+          <div style="font-size: 24px;">🚀 100x</div>
+          <div>Productivity Speed</div>
+        </div>
+        <div class="preview-card">
+          <div style="font-size: 24px;">⚡ 99.99%</div>
+          <div>Automation Score</div>
+        </div>
+        <div class="preview-card">
+          <div style="font-size: 24px;">🔥 50,000+</div>
+          <div>Happy Teams</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

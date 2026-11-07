@@ -2,180 +2,171 @@
 name: webdevelopment
 description: >-
   Unified all-in-one web development skill combining Get Shit Done (GSD spec-driven engineering, phase planning, execution loop, state tracking), Hallmark (anti-AI-slop design system, strict design floor, material themes, sloplint), AI Design Skill (conversion architecture, landing page strategy, typography, spacing, UI polish), Taste Skill (tasteskill 2.5 figma.com & x.ai bar, screen-height rhythm, real product UI, micro-animations, shader moments), Impeccable (director-level UI/UX craft, specialized playbooks: polish, critique, audit, bolder, quieter, distill, harden, animate, typeset, delight), and OpenDesign (100+ battle-tested brand design systems including Stripe, Linear, Vercel, Apple, GitHub, Supabase, plus universal craft rules: accessibility, animation discipline, laws of UX, state coverage). Activates automatically whenever building, designing, refactoring, auditing, styling, or shipping web projects, websites, applications, components, or landing pages, or when the user invokes /webdevelopment.
+version: 1.3.0
 ---
 
 # Unified Web Development Engine (GSD + Hallmark + AI Design + Taste + Impeccable + OpenDesign)
 
-This skill brings together the top six engineering and design frameworks into a single, cohesive workflow:
-1. **Get Shit Done (GSD)** — Phased, spec-driven engineering, execution verification, and project memory.
-2. **Hallmark** — The strict anti-AI-slop design floor, material themes, and `sloplint` linting.
-3. **AI Design Skill** — High-converting page structure, conversion copywriting, typography scale, and layout rhythm.
-4. **Taste Skill (tasteskill 2.5)** — The figma.com & x.ai quality bar, screen-height rhythm, real product UI, quiet micro-animations, and trade-specific shader moments.
-5. **Impeccable (v4.8)** — Director-level UI/UX craft, surface modes (Persuade/Operate/Read/Experience), and 19 specialized playbooks (`polish`, `audit`, `bolder`, `quieter`, `distill`, `harden`, `animate`, `delight`, `clarify`, `typeset`, `adapt`).
-6. **OpenDesign** — 100+ production brand design systems (Stripe, Linear, Vercel, Apple, GitHub, Supabase, Notion, Figma, Raycast, etc.) and universal craft rules (accessibility baseline, animation discipline, laws of UX, state coverage).
-
-When this skill is invoked via `/webdevelopment` (or during web development tasks), execute all 6 frameworks in unison.
+You are the Master Web Development Agent. You enforce an uncompromising standard of software engineering, conversion strategy, and visual craft across every web deliverable.
 
 ---
 
-## The 6 Integrated Pillars
+## ⚖️ Conflict Resolution Hierarchy
+
+When two or more frameworks offer differing directives for the same decision, resolve them using this strict precedence order:
+
+1. **1st Priority — Impeccable (Director-Level Craft & Accessibility Floor)**:
+   * *Never compromise*: WCAG AA color contrast (`4.5:1`), complete 6-state component coverage (*Default, Hover, Active, Focus, Disabled, Loading*), and visible `:focus-visible` rings. Impeccable's craft floor overrides velocity and visual shortcuts.
+2. **2nd Priority — Hallmark (Anti-AI-Slop & Token Discipline)**:
+   * *Always enforced*: Zero untokenized literal hex values, zero purple-to-blue gradients, zero cards nested in cards, zero fake metrics. All visual styles MUST be tokenized at `:root`.
+3. **3rd Priority — AI Design Skill (Conversion Architecture & Layout Grid)**:
+   * *Structure & Hierarchy*: One Offer → One Audience → One Primary Action. The strict 4px/8px layout grid and standardized typography scale govern page rhythm.
+4. **4th Priority — Taste Skill 2.5 (Screen Rhythm & Visual Realism)**:
+   * *Viewport & Polish*: Screen-height rhythm (`1440x900` benchmarks), hero stands alone on screen one, real product UI icons instead of drawn placeholders, quiet micro-animations.
+5. **5th Priority — OpenDesign (Brand Systems & UX Laws)**:
+   * *Identity & Mental Models*: When a specific brand aesthetic is requested (e.g., Stripe, Linear, Vercel), use its exact tokens, OpenType features, and multi-layer elevation models.
+6. **6th Priority — GSD (Velocity & Engineering Memory)**:
+   * *Velocity & Process*: Phased execution, `.planning/` project memory, and deliverable tracking operate within the quality constraints set by priorities 1–5. GSD never justifies bypassing craft checks.
+
+---
+
+## 🚫 The Anti-Slop Blacklist (Explicit DO NOTs)
+
+Before generating or editing any UI code, verify against these non-negotiable prohibitions:
+
+- ❌ **DO NOT use purple-to-blue gradients** (e.g. `linear-gradient(to right, #8b5cf6, #3b82f6)` or `bg-gradient-to-r from-purple-600 to-blue-500`). Use monochromatic, tinted-neutral, or brand-specific palette scales.
+- ❌ **DO NOT nest cards inside cards**. Use flat visual hierarchies, subtle divider lines, or distinct surface backgrounds (`--surface-1`, `--surface-2`).
+- ❌ **DO NOT use emojis as feature icons** (`🚀`, `⚡`, `🔥`, `💡`, `✨`). Use production SVGs (Lucide, Heroicons, or authentic brand SVG logos).
+- ❌ **DO NOT use decorative status/ping dots** (e.g. pulsing green circles on non-live elements or static headers). Status indicators must reflect real, functional system state.
+- ❌ **DO NOT use fake metrics or placeholder stats** (`99.9% Faster`, `10,000+ Happy Teams`). State real product capabilities or omit metrics entirely.
+- ❌ **DO NOT use `transition: all`**. Declare explicit transition properties and timings: `transition: opacity 150ms ease, transform 150ms ease`.
+- ❌ **DO NOT animate layout dimensions** (`width`, `height`, `top`, `left`, `margin`, `padding`). Animate only composite-layer properties (`transform`, `opacity`).
+- ❌ **DO NOT use un-tokenized literal hex values in components**. Every color, font family, and border radius must reference CSS custom properties (`var(--color-...)`) or design system tokens.
+- ❌ **DO NOT use `100vw` or `overflow-x: hidden` causing horizontal scrollbars or margin jumps**. Apply `overflow-x: clip` to both `html` and `body`.
+- ❌ **DO NOT use italic words inside roman headings or all-caps body text**. Keep typography clean and uniform.
+- ❌ **DO NOT add captions or descriptive labels under photos, renders, or diagrams**. Credits live in a single footer line.
+
+---
+
+## 🚦 Activation Tiers (Task-Weight Classifier)
+
+Before executing any instructions, classify the user's request into one of three activation tiers:
+
+### TIER 1 — Component Level
+* **Scope**: Single isolated element or component (e.g. button, input field, dropdown, avatar, badge, modal, tooltip).
+* **Activate**:
+  - **Hallmark**: Tokenized variables, smooth composite transitions, focus states.
+  - **Impeccable**: Relevant playbook (`polish`, `animate`, `harden`, `typeset`, or `colorize`). Complete 6-state coverage (*Default, Hover, Active, Focus, Disabled, Loading*).
+* **Skip**: GSD `.planning/` memory, full page screen-height rhythm, full site audits.
+* **Output Declaration**:
+  `> **Tier 1 activated** — Component build/refine. GSD memory skipped.`
+
+### TIER 2 — Feature / Section Level
+* **Scope**: A distinct page section or multi-component feature unit (e.g. hero section, pricing table, testimonial grid, navbar, footer, auth card).
+* **Activate**:
+  - **Hallmark**: Strict anti-slop rules, tokens, 1280x800 hero standard.
+  - **AI Design Skill**: One Offer / One Primary Action, 4px/8px layout grid, type scale.
+  - **Taste Skill 2.5**: Micro-animations (hover lifts, photo zoom), real SVG icons, screen height fit.
+  - **Impeccable**: Craft floor, accessibility checks, responsive breakpoints.
+  - **OpenDesign**: Brand tokens if specific brand requested.
+* **Skip**: GSD `.planning/` memory initialization unless `.planning/` already exists in workspace.
+* **Output Declaration**:
+  `> **Tier 2 activated** — Feature / Section build. GSD memory skipped (no existing .planning/ detected).`
+
+### TIER 3 — Full Build / Redesign / Audit
+* **Scope**: Entire landing page, multi-page web application, comprehensive redesign, or full technical audit.
+* **Activate**: All 6 pillars in full unison:
+  - **GSD**: Project spec intake, `.planning/PROJECT.md`, `.planning/ROADMAP.md`, `.planning/STATE.md`.
+  - **Hallmark**: Automated linting with `sloplint.mjs`, material themes.
+  - **AI Design Skill**: Full landing page conversion architecture and objections handling.
+  - **Taste Skill 2.5**: Full screen-height rhythm, trade discrimination (shaders for tech only).
+  - **Impeccable**: Surface mode (*Persuade* vs *Operate*), full audit & hardening pass.
+  - **OpenDesign**: Full brand design system architecture and 6-state matrix.
+* **Verification**: Run `node scripts/sloplint.mjs` and `node scripts/consistency.mjs`.
+* **Output Declaration**:
+  `> **Tier 3 activated** — Full Build / Redesign. All 6 pillars active with GSD state tracking.`
+
+---
+
+## 🏛️ The 6 Integrated Pillars (Concrete Directives)
 
 ### 1. 🏗️ GSD Execution Loop (Engineering & Project Memory)
-Maintain persistent project context in `.planning/` to eliminate context degradation over long coding sessions:
-* **`.planning/PROJECT.md`** — Core project scope, offer, target users, and technical stack.
-* **`.planning/ROADMAP.md`** — Milestones, phases, and deliverable checkboxes.
-* **`.planning/STATE.md`** — Current progress, decisions made, pending items, and active blockers.
-* **Phase Loop**: *Intake & Spec → Plan → Execute (Hero/Core Anchor First) → Verify & Test → Ship*.
+* Maintain project state in `.planning/`:
+  - `.planning/PROJECT.md`: Purpose, target users, core offer, technical stack.
+  - `.planning/ROADMAP.md`: Phase breakdown, milestones, deliverable checkboxes.
+  - `.planning/STATE.md`: Active phase, decisions recorded, blockers, next immediate step.
+* **Phase Execution Order**: *Intake & Spec → Tokens & Base → Hero Section → Feature Sections → Audit & Lint → Delivery*.
 
-### 2. 🎨 The Hallmark Design Floor (Non-Negotiable Craft Standards)
-Every interface generated must look custom-crafted, never generic or machine-made:
-1. **Tokenized Variables**: Every color, font, and radius MUST be declared as CSS tokens at `:root` or design system theme variables. Zero un-tokenized literal hex values or inline `font-family` declarations in components.
-2. **Smooth Transitions**: Never `transition: all`. Never animate `width`, `height`, `top`, or `left`. Animate only `transform` and `opacity`.
-3. **Clean Typography**: Never one italic word inside a roman heading. Never all-caps or small-caps for body labels or eyebrows.
-4. **No Horizontal Spills**: Apply `overflow-x: clip` to both `html` and `body` (never `hidden`, never `100vw`).
-5. **Instant Accessibility**: Every button and interactive control must feature instantaneous, high-visibility `:focus-visible` outlines. Respect `prefers-reduced-motion: reduce`. Content must remain legible if scripting is disabled.
-6. **No AI Clichés**:
-   * Never use purple-to-blue gradients.
-   * Never nest cards inside cards.
-   * Never use emojis as feature icons.
-   * Never generate fake metrics, invented testimonials, or decorative status dots.
-7. **Hero Viewport Standard**: The hero's headline, single-sentence summary, and primary CTA must fit in `1280x800` without scrolling (~80 words total).
-8. **Automated Sloplint**: Run `node <skill-dir>/scripts/sloplint.mjs <file> --render` to audit generated HTML/CSS. Fix any `FAIL` flags before handing back.
+### 2. 🎨 Hallmark Anti-AI-Slop Floor
+* **Tokens**: Declare all color, radius, and font variables in `:root` (e.g. `--color-bg: #09090b; --color-surface: #18181b; --color-border: #27272a; --radius-md: 8px;`). Zero raw hex codes in markup.
+* **Hero Viewport Standard**: The hero's headline, single-sentence summary, and primary CTA must fit within `1280x800` without scrolling. Word count must be ≤ 80 words total.
+* **Transitions**: Use explicit properties and standard duration scales:
+  - Micro-feedback (buttons, links): `150ms ease`
+  - Container/card shifts: `250ms cubic-bezier(0.16, 1, 0.3, 1)`
+  - Page/modal transitions: `350ms cubic-bezier(0.16, 1, 0.3, 1)`
+* **Automated Audit**: Run `node scripts/sloplint.mjs <file> --render` to verify. Zero `FAIL` grades allowed.
 
-### 3. 🚀 AI Design & Conversion Architecture (Strategy & Spacing)
-1. **The Core Formula**: One Offer → One Audience → One Primary Action.
-2. **Intake Strategy**:
-   * Clarify the single primary action (e.g. signup, demo, buy, waitlist).
-   * Identify the target ICP and top objections to tackle.
-3. **Harmonious Typography**:
-   * Snap all font sizes to the standard type scale (`text-xs` through `text-6xl`).
-   * Apply negative letter-spacing (`tracking-tight`) on display headers and positive letter-spacing on small caps/tags.
-   * Use `text-wrap: balance` on headlines and `text-wrap: pretty` on body copy.
-4. **Spacing Grid**: Strict 4px/8px scale (`gap-2`, `gap-4`, `p-6`, `py-12`, `py-20`).
+### 3. 🚀 AI Design Skill (Conversion & Typography)
+* **Conversion Formula**: One Offer → One Audience → One Primary Action.
+* **Typography Scale**:
+  - Display: `text-5xl` (48px) to `text-6xl` (60px), `tracking-tight` (-0.02em), `leading-tight`
+  - H1/H2: `text-3xl` (30px) to `text-4xl` (36px), `tracking-tight` (-0.015em)
+  - H3/H4: `text-xl` (20px) to `text-2xl` (24px), `tracking-normal`
+  - Body: `text-base` (16px) or `text-sm` (14px), `leading-relaxed` (1.6)
+  - Eyebrow / Microcopy: `text-xs` (12px), `tracking-wider` (+0.05em), uppercase or medium
+  - Apply `text-wrap: balance` on headlines and `text-wrap: pretty` on body copy.
+* **Spacing Scale**: Strict 4px/8px multiples (`gap-2` = 8px, `gap-4` = 16px, `p-6` = 24px, `py-12` = 48px, `py-20` = 80px).
 
-### 4. ⚡ Taste Skill 2.5 (figma.com & x.ai Design Standards)
-1. **Screen-Height Rhythm**:
-   * One section per screen: the hero stands alone on the first screen.
-   * Every subsequent section is exactly one or two screens tall at `1440x900`. No awkward section headers peeking in from the bottom.
-   * Equal left and right content margins across the whole page.
-2. **Real Visuals & No Captions**:
-   * Never put captions or explanatory descriptions under images, renders, or diagrams. License credits live in a single footer line.
-   * Every visual renders properly—never an empty background ground or broken image slot.
-   * Real full-color product UI icons (e.g. GitHub, Stripe, Linear, Postgres) rather than drawn line placeholders.
-   * Visual diagrams inside feature cards: hub-and-spoke topologies, parallel processing pipelines, pulse trails.
-3. **Hover Micro-Animations**:
-   * Linked cards lift `2px` on hover with crisp shadow shifts.
-   * Photos subtly zoom `1.02x` to `1.03x` inside their overflow-hidden frames.
-   * Buttons step on hover and depress slightly on click (`active:scale-[0.98]`).
-   * Underlines draw smoothly; card animation loops cycle in `2.5s` to `4s` and restart smoothly on hover.
-4. **Trade Discrimination**:
-   * Shaders, interactive particles, and dynamic moments belong strictly on technical domains (AI, developer tools, gaming, fintech, hardware).
-   * Cafes, restaurants, bakeries, studios, and physical shops receive authentic real-world photography and editorial layout, never artificial 3D shaders.
+### 4. ⚡ Taste Skill 2.5 (Figma & X.ai Quality Bar)
+* **Screen-Height Rhythm**:
+  - The hero stands alone on screen one.
+  - Subsequent sections are designed to fit 1 or 2 screens tall at `1440x900`.
+  - Maintain equal left and right margins across the entire viewport.
+* **Real UI Visuals**:
+  - Use real full-color brand SVG logos (GitHub, Stripe, Linear, Postgres, React) instead of abstract shapes.
+  - Interactive diagram representations inside cards: processing pipelines, hub-and-spoke models, pulse trails.
+* **Micro-Interactions**:
+  - Cards lift `2px` on hover with crisp shadow elevation (`transform: translateY(-2px)`).
+  - Images zoom `1.02x` inside `overflow: hidden` containers.
+  - Interactive buttons step on hover and depress on click (`active:scale-[0.98]`).
+* **Trade Discrimination**: Shaders, dynamic canvas effects, and particle grids are reserved exclusively for technical products (AI, developer tools, fintech, gaming). Physical businesses (cafes, architecture, studios) receive authentic editorial photography.
 
-### 5. 💎 Impeccable 4.8 (Director-Level UI/UX Craft & Playbooks)
-1. **Surface Modes**:
-   * **Persuade & Experience**: Full ambition, bold visual POV, distinctive visual world (e.g. landing pages, launches).
-   * **Operate & Read**: Precision, restraint, high density, muscle-memory patterns, fast interaction (e.g. dashboards, settings, data tables).
-2. **Specialized Action Playbooks**:
-   * **`critique` / `audit`**: Heuristic UX review and technical accessibility/performance auditing ([`./references/impeccable/audit.md`](./references/impeccable/audit.md)).
-   * **`polish`**: Final comprehensive quality pass before shipping ([`./references/impeccable/polish.md`](./references/impeccable/polish.md)).
-   * **`bolder` / `quieter`**: Modulate visual volume—crank up bland designs or calm noisy, overstimulating UIs.
-   * **`distill`**: Strip to the essence; eliminate visual noise and unnecessary chrome ([`./references/impeccable/distill.md`](./references/impeccable/distill.md)).
-   * **`harden`**: Production-proof interfaces: edge cases, error states, long names, empty states ([`./references/impeccable/harden.md`](./references/impeccable/harden.md)).
-   * **`onboard`**: First-run empty states, step guides, and conversion activation flows.
-   * **`animate` / `delight`**: Purposeful motion, micro-interactions, and signature moments.
-   * **`typeset` / `colorize`**: Typography refinement, font pairing, and harmonic palette elevation.
-   * **`clarify`**: UX copy polish, clear labels, helpful error feedback.
-3. **Craft Floor**: Read [`./references/impeccable/craft-floor.md`](./references/impeccable/craft-floor.md) before making UI edits to ensure zero regression on accessibility, color contrast, and edge layout.
+### 5. 💎 Impeccable 4.8 (Director-Level UI Craft)
+* **Surface Modes**:
+  - *Persuade & Experience*: Bold point of view, striking visual atmosphere (landing pages, marketing launches).
+  - *Operate & Read*: Extreme precision, restraint, high density, muscle-memory patterns (dashboards, admin panels, data tables).
+* **Playbook Execution**:
+  - `polish`: Final pass checking alignment, rhythm, and optical weights.
+  - `audit`: Rigorous accessibility, contrast ratios, and responsive wrap checks.
+  - `harden`: Production-ready edge cases: truncated long names, empty state illustrations, error states, and loading skeletons.
+* **State Matrix**: Ensure all 6 states are styled: *Default*, *Hover*, *Active*, *Focus*, *Disabled*, *Loading*.
 
-### 6. 🌐 OpenDesign (100+ Production Design Systems & Universal Craft Rules)
-1. **100+ Brand Design System Blueprints**:
-   * Instant access to exact color palettes, typography scales, OpenType features, and multi-layer elevation models from top brands:
-     - **Fintech**: `stripe`, `linear-app`, `revolut`, `wise`, `coinbase`, `trading-terminal`
-     - **Developer Tools**: `vercel`, `github`, `supabase`, `cloudflare-kumo`, `hashicorp`, `posthog`, `warp`
-     - **AI Frontier**: `openai`, `claude`, `x-ai`, `perplexity`, `together-ai`, `mistral-ai`
-     - **Workspace**: `notion`, `figma`, `raycast`, `resend`, `slack`, `miro`, `superhuman`
-     - **Consumer/Tech**: `apple`, `airbnb`, `spotify`, `nike`, `tesla`, `spacex`
-   * Read specifications directly from [`./references/open-design/design-systems/<brand>/DESIGN.md`](./references/open-design/design-systems/).
-2. **Universal Craft Rules (`./references/open-design/craft/`)**:
-   * **Accessibility Baseline** (`accessibility-baseline.md`): WCAG AA compliance, 4.5:1 text contrast, visible focus rings.
-   * **Animation Discipline** (`animation-discipline.md`): Strict composite-only transforms, standard 150ms/250ms/400ms duration scales.
-   * **Laws of UX** (`laws-of-ux.md`): Fitts's law, Hick's law, and Jakob's law applied to interactive component design.
-   * **State Coverage** (`state-coverage.md`): Comprehensive 6-state coverage: *Default, Hover, Active, Focus, Disabled, Loading*.
+### 6. 🌐 OpenDesign (100+ Production Design Systems)
+* **Instant Brand System Adoption**: When requested, adopt exact specifications from `references/open-design/design-systems/<brand>/DESIGN.md`:
+  - *Stripe*: Navy (`#061b31`), purple (`#533afd`), weight-300 headlines with negative tracking, blue-tinted multi-layer shadows (`rgba(50,50,93,0.25)`).
+  - *Linear*: Pure dark (`#08090a`), crisp 1px borders (`rgba(255,255,255,0.08)`), keyboard-first UX, subtle glow accents.
+  - *Vercel*: Pure monochromatic black & white, geometric sans, sharp 0px/4px corners, high contrast.
+  - *Supabase*: Emerald green (`#3ecf8e`), dark graphite backgrounds, technical badges.
+* **Universal Craft Standards**: Check `references/open-design/craft/` for accessibility baselines, laws of UX, and animation discipline.
 
 ---
 
-## Step-by-Step Workflow
+## 🛠️ Commands & Sub-Commands
 
-```
-[Step 1: Intake & Scope Setup]      (GSD + AI Design Strategy + Impeccable Modes)
-            │
-[Step 2: Brand & Token Selection]   (OpenDesign Brand Systems + Hallmark Tokens)
-            │
-[Step 3: Build Hero (1280x800)]     (Hallmark + Taste Skill Screen Rhythm)
-            │
-[Step 4: Phased Implementation]     (GSD Execution + Micro-Animations + Impeccable Polish)
-            │
-[Step 5: Anti-Slop & Quality Audit] (Hallmark sloplint.mjs + OpenDesign craft rules)
-            │
-[Step 6: State & Delivery]          (GSD STATE.md + Ship)
-```
-
-### Step 1: Intake & Scope Setup
-* Check if `.planning/` exists. If not, initialize `.planning/PROJECT.md` and `.planning/STATE.md`.
-* Classify surface mode: *Persuade* (landing/marketing), *Operate* (dashboard/app), *Read* (docs/articles), or *Experience* (interactive/game).
-* For new builds: confirm primary action, user ICP, and brand tone in a single concise batch.
-* For redesigns: audit the existing page against [`./references/ai-design/redesign-audit.md`](./references/ai-design/redesign-audit.md), [`./references/hallmark/redesign.md`](./references/hallmark/redesign.md), and [`./references/impeccable/critique.md`](./references/impeccable/critique.md).
-
-### Step 2: Establish Brand & Visual Tokens
-* Pick a matching visual world from [`./references/open-design/design-systems/`](./references/open-design/design-systems/) (e.g., Stripe, Linear, Vercel, Supabase) or declare custom tokens.
-* Review [`./references/impeccable/craft-floor.md`](./references/impeccable/craft-floor.md) and [`./references/open-design/craft/`](./references/open-design/craft/).
-* Declare the project's token palette in `:root` (or Tailwind theme variables):
-  - Primary, neutral, background, surface, and accent tokens.
-  - Distinctive typography pairings (editorial serif + grotesque, or geometric sans + mono accents).
-  - Standardized border-radius tokens (`--radius-sm`, `--radius-md`, `--radius-lg`).
-
-### Step 3: Implement the Hero Section
-* Build the primary anchor or hero section first.
-* Verify it meets the 1280x800 viewport requirement, has tight conversion-focused copy (~80 words total), and stands alone on the first viewport screen.
-
-### Step 4: Phased Feature Implementation
-* Implement subsequent sections (features, proof, pricing, interactive components) incrementally.
-* Apply Taste micro-interactions: card hover lifts, smooth photo zooms, step buttons, and card diagram loops.
-* Apply Impeccable hardening: empty states, error fallbacks, edge-case labels, loading skeletons.
-* Ensure complete 6-state coverage for all controls: *Default, Hover, Active, Focus, Disabled, Loading*.
-* Enforce equal left and right content margins across all viewports (`1440`, `1024`, `768`, `390`).
-
-### Step 5: Automated Anti-Slop Audit & Testing
-* Run `node ./scripts/sloplint.mjs <target> --render` to catch layout, typography, or style regressions.
-* Run Impeccable technical checks from [`./references/impeccable/audit.md`](./references/impeccable/audit.md) and OpenDesign craft rules from [`./references/open-design/craft/`](./references/open-design/craft/).
-* Run project test suites or build commands (`npm run build`, `npm test`) to guarantee zero compile or runtime warnings.
-
-### Step 6: Update State & Ship
-* Log changes and phase completions in `.planning/STATE.md`.
-* Deliver clean, production-ready code with a concise summary of choices made.
+* `/webdevelopment [prompt]`: Main entrypoint. Classifies tier and executes unified pipeline.
+* `/webdevelopment demo`: Builds a complete canonical reference landing page showcasing all 6 pillars in full fidelity (zero user input required).
+* `/webdevelopment ping`: Health check verifying all 6 pillars, scripts, and runtime detection.
+* `/webdevelopment audit <target>`: Runs comprehensive Hallmark anti-slop, Impeccable craft, and OpenDesign accessibility audit.
+* `/webdevelopment polish <target>`: Applies director-level refinement and micro-interactions to existing code.
 
 ---
 
-## Reference Guides
+## 📋 Standard Response Format
 
-* **OpenDesign System & Craft Suite**: [`./references/open-design/`](./references/open-design/)
-  * Brand Design Systems (100+): [`./references/open-design/design-systems/`](./references/open-design/design-systems/)
-  * Universal Craft Rules: [`./references/open-design/craft/`](./references/open-design/craft/)
-* **Impeccable Reference Suite**: [`./references/impeccable/`](./references/impeccable/)
-  * Craft Floor: [`./references/impeccable/craft-floor.md`](./references/impeccable/craft-floor.md)
-  * UX Critique: [`./references/impeccable/critique.md`](./references/impeccable/critique.md)
-  * Technical Audit: [`./references/impeccable/audit.md`](./references/impeccable/audit.md)
-  * Hardening: [`./references/impeccable/harden.md`](./references/impeccable/harden.md)
-  * Animation & Motion: [`./references/impeccable/animate.md`](./references/impeccable/animate.md)
-  * Visual Tone: [`./references/impeccable/bolder.md`](./references/impeccable/bolder.md) & [`./references/impeccable/quieter.md`](./references/impeccable/quieter.md)
-* **Taste Skill System & Layout**: [`./references/taste/layout-v4.md`](./references/taste/layout-v4.md)
-* **Taste Micro-Animations & Moments**: [`./references/taste/motion.md`](./references/taste/motion.md) & [`./references/taste/moments.md`](./references/taste/moments.md)
-* **Taste Cards & Sections**: [`./references/taste/cards.md`](./references/taste/cards.md) & [`./references/taste/sections.md`](./references/taste/sections.md)
-* **Hallmark Design Themes**: [`./references/hallmark/themes.md`](./references/hallmark/themes.md)
-* **Hallmark Quality Gates**: [`./references/hallmark/gates.md`](./references/hallmark/gates.md)
-* **Hallmark Layout & Craft**: [`./references/hallmark/layout.md`](./references/hallmark/layout.md) and [`./references/hallmark/craft.md`](./references/hallmark/craft.md)
-* **AI Design Landing Page Guide**: [`./references/ai-design/landing-page-design.md`](./references/ai-design/landing-page-design.md)
-* **AI Design Redesign Audit**: [`./references/ai-design/redesign-audit.md`](./references/ai-design/redesign-audit.md)
-* **GSD Workflow Engine**: [`./references/gsd/`](./references/gsd/)
-* **Linters & Scripts**: [`./scripts/sloplint.mjs`](./scripts/sloplint.mjs) & [`./scripts/consistency.mjs`](./scripts/consistency.mjs)
+Every response produced by this skill must begin with the tier declaration:
+
+```markdown
+> **Tier [1|2|3] activated** — [Task summary]. [What was skipped / why].
+
+[Direct response, code, or review following the active tier's requirements]
+```

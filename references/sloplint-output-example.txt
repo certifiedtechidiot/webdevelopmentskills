@@ -1,0 +1,35 @@
+================================================================================
+SAMPLE SLOPLINT AUDIT RUN — certifiedtechidiot/webdevelopmentskills
+Engine: scripts/sloplint.mjs (Zero external dependencies, Node >= 18)
+================================================================================
+
+$ node scripts/sloplint.mjs references/before-after/saas-card-before.html
+
+references/before-after/saas-card-before.html
+  FAIL 20 :1 no Hallmark stamp on the first non-empty line of any CSS | fix: The stamp comment is line 1 of the CSS; only @charset may precede it
+  FAIL 27 :229 motion present, no prefers-reduced-motion block | fix: Add a prefers-reduced-motion fallback
+  REFLEX 7b :40 pure #fff: color: #ffffff (:root) | fix: Tint the base toward the anchor hue
+  FAIL 24 :31 transition: all detected on .outer-card | fix: List explicit transition properties (opacity, transform, background-color)
+  FAIL 16 :45 emoji detected in UI copy / icons: 🚀✨ | fix: Use inline SVG icons with aria-hidden="true"
+  WARN 40 :207 2.76:1 < 4.5:1 on .stat-label | fix: Raise the contrast to threshold
+  WARN 41 :1 accent fills a surface but --color-accent-ink is undefined | fix: Define and apply --color-accent-ink
+  WARN F16 :1 browser surfaces unthemed: ::selection, scrollbar-color | fix: Theme the parts you did not draw from the palette
+  WARN F23 :1 the document lacks a meta description | fix: Name the language, title the page in its own words, and describe it in one sentence for link previews
+
+sloplint: 4 FAIL, 1 REFLEX, 4 WARN across 1 file(s).
+[Process exited with code 1]
+
+--------------------------------------------------------------------------------
+APPLYING HALLMARK CORRECTIONS:
+1. Replaced raw gradients with tokenized :root CSS variables.
+2. Flattened nested cards into a single article container with spec-rows.
+3. Swapped emojis for crisp inline SVGs.
+4. Added @media (prefers-reduced-motion: reduce) block.
+5. Specified transition properties: transform, border-color, background-color.
+6. Added meta description and themed ::selection & scrollbars.
+--------------------------------------------------------------------------------
+
+$ node scripts/sloplint.mjs references/before-after/saas-card-after.html
+
+sloplint: clean. 0 FAIL, 0 REFLEX, 0 WARN across 1 file(s).
+[Process exited with code 0]

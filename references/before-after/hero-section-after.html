@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Production database branching platform with instant isolated Postgres environments.">
+  <title>Database Branching for Engineering Teams (AFTER)</title>
+  <style>
+    /* Hallmark: Linear Theme Design System (v1.3.0) */
+    :root {
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+      /* Palette Tokens (Dark Craft - no pure #fff) */
+      --color-canvas: #090a0b;
+      --color-surface: #111214;
+      --color-surface-elevated: #17181b;
+      --color-subtle: #1e2024;
+
+      --color-border-subtle: rgba(255, 255, 255, 0.08);
+      --color-border-strong: rgba(255, 255, 255, 0.16);
+      --color-border-focus: #5e6ad2;
+
+      --color-text-primary: #f2f3f5;
+      --color-text-secondary: #9da2ab;
+      --color-text-muted: #828792;
+
+      --color-accent: #5e6ad2;
+      --color-accent-hover: #6f7be8;
+      --color-accent-active: #525cc0;
+      --color-accent-ink: #f8f9fa;
+
+      /* Motion */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --duration-fast: 160ms;
+
+      /* Geometry */
+      --radius-sm: 6px;
+      --radius-md: 8px;
+    }
+
+    ::selection {
+      background-color: var(--color-accent);
+      color: var(--color-accent-ink);
+    }
+
+    html {
+      scrollbar-color: var(--color-subtle) var(--color-canvas);
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-canvas);
+      color: var(--color-text-primary);
+      font-family: var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: clip;
+    }
+
+    /* Strict Screen-Height Rhythm: Fits 1280x800 viewport without scroll using 100dvh */
+    .hero-viewport {
+      box-sizing: border-box;
+      min-height: 100dvh;
+      max-height: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 32px;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    /* Header Nav Minimal */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+
+    .brand-mark {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--color-text-primary);
+      text-decoration: none;
+    }
+
+    .nav-link {
+      font-size: 13px;
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      transition: color var(--duration-fast) var(--ease-out);
+    }
+
+    .nav-link:hover {
+      color: var(--color-text-primary);
+    }
+
+    /* Main Hero Grid */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    /* Copy Column */
+    .hero-copy {
+      max-width: 520px;
+    }
+
+    .pill-announcement {
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: 9999px;
+      padding: 4px 12px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 1.15;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin: 0 0 16px 0;
+      color: var(--color-text-primary);
+      text-wrap: balance;
+    }
+
+    .lead-paragraph {
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--color-text-secondary);
+      margin: 0 0 28px 0;
+    }
+
+    /* One Primary Action */
+    .action-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      padding: 0 20px;
+      background-color: var(--color-accent);
+      color: var(--color-accent-ink);
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      text-decoration: none;
+      box-sizing: border-box;
+      transition: 
+        background-color var(--duration-fast) var(--ease-out),
+        border-color var(--duration-fast) var(--ease-out);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-accent-hover);
+    }
+
+    .btn-primary:active {
+      background-color: var(--color-accent-active);
+    }
+
+    .btn-primary:focus-visible {
+      outline: 2px solid var(--color-border-focus);
+      outline-offset: 2px;
+    }
+
+    .sub-cta-note {
+      font-size: 13px;
+      color: var(--color-text-muted);
+    }
+
+    /* Real Product UI Code Canvas: Crisp defined edge */
+    .ui-canvas {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .canvas-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-bottom: 1px solid var(--color-border-subtle);
+      background-color: var(--color-surface-elevated);
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--color-text-secondary);
+    }
+
+    .window-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--color-subtle);
+      border: 1px solid var(--color-border-subtle);
+    }
+
+    .canvas-body {
+      padding: 24px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--color-text-secondary);
+    }
+
+    .code-cmd {
+      color: var(--color-text-primary);
+    }
+
+    .code-param {
+      color: var(--color-accent-hover);
+    }
+
+    .code-output {
+      color: var(--color-text-muted);
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--color-border-subtle);
+    }
+
+    /* Accessibility: Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav-bar">
+    <a href="#" class="brand-mark">BranchSQL</a>
+    <nav>
+      <a href="#docs" class="nav-link">Documentation</a>
+    </nav>
+  </header>
+
+  <main class="hero-viewport">
+    <div class="hero-grid">
+      <!-- One Offer -> One Audience -> One Action -->
+      <section class="hero-copy">
+        <div class="pill-announcement">PostgreSQL 17 Support Available</div>
+        <h1>Instant database branches for pull requests</h1>
+        <p class="lead-paragraph">
+          Spin up isolated Postgres staging copies in three seconds with copy-on-write storage.
+        </p>
+
+        <div class="action-row">
+          <a href="#signup" class="btn-primary">Start Branching</a>
+          <span class="sub-cta-note">Zero credentials stored</span>
+        </div>
+      </section>
+
+      <!-- Real Product UI Terminal Simulation -->
+      <aside class="ui-canvas" aria-label="CLI Demonstration">
+        <div class="canvas-header">
+          <span class="window-dot" aria-hidden="true"></span>
+          <span class="window-dot" aria-hidden="true"></span>
+          <span class="window-dot" aria-hidden="true"></span>
+          <span style="margin-left: 8px;">bash (branchsql branch)</span>
+        </div>
+        <div class="canvas-body">
+          <div>$ <span class="code-cmd">branchsql branch create</span> <span class="code-param">pr-482-auth</span></div>
+          <div class="code-output">
+            &rarr; Cloning schema from prod-main…<br>
+            &rarr; Copy-on-write snapshot created: 48MB<br>
+            &rarr; Connection URI ready in 2.74s<br>
+            <span style="color: var(--color-text-primary);">postgres://app:token@pr-482.branchsql.internal:5432/db</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+</body>
+</html>
