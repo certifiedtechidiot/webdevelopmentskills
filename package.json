@@ -1,0 +1,30 @@
+{
+  "name": "@certifiedtechidiot/webdevelopmentskills",
+  "version": "1.0.0",
+  "description": "Unified Web Development Skill combining Get Shit Done (GSD), Hallmark (Anti-AI-Slop), and AI Design Skill into one cohesive workflow.",
+  "main": "skills/webdevelopment/SKILL.md",
+  "keywords": [
+    "antigravity",
+    "claude-code",
+    "cursor",
+    "codex",
+    "windsurf",
+    "opencode",
+    "skills",
+    "webdevelopment",
+    "gsd",
+    "hallmark",
+    "ai-design",
+    "anti-slop"
+  ],
+  "author": "certifiedtechidiot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/certifiedtechidiot/webdevelopmentskills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/certifiedtechidiot/webdevelopmentskills/issues"
+  },
+  "homepage": "https://github.com/certifiedtechidiot/webdevelopmentskills#readme"
+}
