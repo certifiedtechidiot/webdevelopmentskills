@@ -1,8 +1,8 @@
 {
   "name": "webdevelopment",
   "displayName": "Web Development",
-  "description": "Unified 5-in-1 web development system combining Get Shit Done (GSD), Hallmark (Anti-AI-Slop), AI Design Skill, Taste Skill (tasteskill 2.5), and Impeccable (v4.8) into one cohesive workflow.",
-  "version": "1.2.0",
+  "description": "Unified 6-in-1 web development system combining Get Shit Done (GSD), Hallmark (Anti-AI-Slop), AI Design Skill, Taste Skill (tasteskill 2.5), Impeccable (v4.8), and OpenDesign into one cohesive workflow.",
+  "version": "1.3.0",
   "author": "certifiedtechidiot",
   "homepage": "https://github.com/certifiedtechidiot/webdevelopmentskills",
   "repository": {
@@ -10,7 +10,8 @@
     "url": "https://github.com/certifiedtechidiot/webdevelopmentskills.git"
   },
   "suggestedPrompts": [
-    "/webdevelopment build a modern landing page with figma/x.ai quality bar and zero AI slop",
+    "/webdevelopment build a modern landing page styled like Linear with zero AI slop",
+    "/webdevelopment build a Stripe-inspired fintech checkout with figma-grade craft",
     "/webdevelopment polish this UI to director-level craft with impeccable standards",
     "/webdevelopment audit and redesign this page to eliminate slop and upgrade visual hierarchy",
     "/webdevelopment plan and execute a new web application feature with GSD specs"

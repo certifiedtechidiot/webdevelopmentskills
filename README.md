@@ -1,31 +1,31 @@
 # ⚡ Web Development Skills (`/webdevelopment`)
 
-> **The Unified 5-in-1 Master Skill for AI Coding Assistants**  
-> Combines **Get Shit Done (GSD)**, **Hallmark (Anti-AI-Slop)**, **AI Design Skill**, **Taste Skill (tasteskill 2.5)**, and **Impeccable (v4.8)** into one cohesive command.
+> **The Unified 6-in-1 Master Skill for AI Coding Assistants**  
+> Combines **Get Shit Done (GSD)**, **Hallmark (Anti-AI-Slop)**, **AI Design Skill**, **Taste Skill (tasteskill 2.5)**, **Impeccable (v4.8)**, and **OpenDesign (100+ Design Systems)** into one cohesive command.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Runtime: Universal](https://img.shields.io/badge/Runtime-Antigravity%20%7C%20Claude%20Code%20%7C%20Cursor%20%7C%20Codex-brightgreen.svg)]()
 
-Instead of juggling and remembering separate slash commands (`/gsd-new-project`, `/hallmark`, `/landing-page-design`, `/taste`, `/impeccable`, `/sloplint`, etc.), **`/webdevelopment`** triggers all five frameworks simultaneously in an automated, disciplined loop.
+Instead of juggling and remembering separate slash commands (`/gsd-new-project`, `/hallmark`, `/landing-page-design`, `/taste`, `/impeccable`, `/open-design`, etc.), **`/webdevelopment`** triggers all six frameworks simultaneously in an automated, disciplined loop.
 
 ---
 
-## 🏛️ The 5 Integrated Pillars
+## 🏛️ The 6 Integrated Pillars
 
 ```
-                                  /webdevelopment Pipeline
-                                             │
-      ┌─────────────────┬────────────────────┼───────────────────┬──────────────────┐
-      ▼                 ▼                    ▼                   ▼                  ▼
-┌───────────┐     ┌───────────┐        ┌───────────┐       ┌───────────┐      ┌───────────┐
-│ GSD Core  │     │ Hallmark  │        │ AI Design │       │   Taste   │      │Impeccable │
-│           │     │   Floor   │        │   Skill   │       │ Skill 2.5 │      │   (4.8)   │
-├───────────┤     ├───────────┤        ├───────────┤       ├───────────┤      ├───────────┤
-│• Spec plan│     │• Anti-slop│        │• 1 Offer  │       │• figma/xai│      │• Director │
-│• .planning│     │• :root var│        │• UX scale │       │• Rhythm   │      │• 19 plays │
-│• Phase    │     │• No cliches│       │• 4/8px    │       │• Real UI  │      │• Modes    │
-│• Verified │     │• sloplint │        │• Copy form│       │• Shaders  │      │• Hardening│
-└───────────┘     └───────────┘        └───────────┘       └───────────┘      └───────────┘
+                                      /webdevelopment Pipeline
+                                                 │
+      ┌──────────────┬──────────────┬────────────┼────────────┬──────────────┬──────────────┐
+      ▼              ▼              ▼            ▼            ▼              ▼              ▼
+┌───────────┐  ┌───────────┐  ┌───────────┐┌───────────┐┌───────────┐  ┌───────────┐
+│ GSD Core  │  │ Hallmark  │  │ AI Design ││   Taste   ││Impeccable │  │OpenDesign │
+│           │  │   Floor   │  │   Skill   ││ Skill 2.5 ││   (4.8)   │  │ (100+ DS) │
+├───────────┤  ├───────────┤  ├───────────┤├───────────┤├───────────┤  ├───────────┤
+│• Spec plan│  │• Anti-slop│  │• 1 Offer  ││• figma/xai││• Director │  │• Stripe DS│
+│• .planning│  │• :root var│  │• UX scale ││• Rhythm   ││• 19 plays │  │• Linear DS│
+│• Phase    │  │• No cliches│ │• 4/8px    ││• Real UI  ││• Modes    │  │• Vercel DS│
+│• Verified │  │• sloplint │  │• Copy form││• Shaders  ││• Hardening│  │• UX Laws  │
+└───────────┘  └───────────┘  └───────────┘└───────────┘└───────────┘  └───────────┘
 ```
 
 ### 1. 🏗️ Get Shit Done (GSD) — Engineering & State Memory
@@ -56,17 +56,17 @@ Instead of juggling and remembering separate slash commands (`/gsd-new-project`,
 * **Surface Modes**: Calibrates ambition to the domain:
   - *Persuade & Experience*: Bold, distinctive POV, striking visual world (landing pages, launches).
   - *Operate & Read*: Precision, restraint, high information density, muscle-memory patterns (dashboards, settings, data tables).
-* **19 Specialized Playbooks**:
-  - `critique` & `audit`: Heuristic UX evaluation and technical accessibility/performance auditing.
-  - `polish`: Comprehensive final quality pass before shipping.
-  - `bolder` & `quieter`: Modulate visual volume—turn up safe designs or calm noisy, overstimulating UIs.
-  - `distill`: Strip to essence; remove clutter, visual debt, and unnecessary chrome.
-  - `harden`: Production-ready edge cases, error states, long names, and empty states.
-  - `onboard`: First-run flows, empty state activation, and onboarding walkthroughs.
-  - `animate` & `delight`: Purposeful motion curves, micro-interactions, and signature memorable touches.
-  - `typeset` & `colorize`: Font pairing hierarchy, optical kerning, and chromatic palette elevation.
-  - `clarify` & `adapt`: UX copy precision and responsive adaptation for mobile, tablet, and desktop.
+* **19 Specialized Playbooks**: `critique`, `audit`, `polish`, `bolder`, `quieter`, `distill`, `harden`, `onboard`, `animate`, `delight`, `typeset`, `colorize`, `clarify`, `adapt`, and more.
 * **Strict Craft Floor**: Pre-flight checks (`craft-floor.md`) enforce accessibility, contrast, and edge layout safety before writing UI code.
+
+### 6. 🌐 OpenDesign — 100+ Production Design Systems & Universal Craft Rules
+* **100+ Brand Design System Blueprints**: Complete token sets, type scales, OpenType features, and multi-layer shadows from industry leaders:
+  - *Fintech*: Stripe, Linear, Revolut, Wise, Coinbase
+  - *Developer Tools*: Vercel, GitHub, Supabase, Cloudflare, PostHog, HashiCorp, Warp
+  - *AI*: OpenAI, Claude, x.ai, Perplexity, Together AI, Mistral AI
+  - *Workspace*: Notion, Figma, Raycast, Resend, Slack, Miro
+  - *Consumer*: Apple, Airbnb, Spotify, Nike, Tesla, SpaceX
+* **Universal Craft Standards**: Strict rules for accessibility baseline, animation discipline, laws of UX (Fitts/Hick/Jakob), and full 6-state component coverage.
 
 ---
 
@@ -102,7 +102,11 @@ git clone https://github.com/certifiedtechidiot/webdevelopmentskills.git .agents
 Whenever you want to build, redesign, audit, or polish any web interface, simply type:
 
 ```text
-/webdevelopment build a SaaS landing page for an autonomous agent platform
+/webdevelopment build a modern landing page styled like Linear with zero AI slop
+```
+
+```text
+/webdevelopment build a Stripe-inspired fintech checkout with figma-grade craft
 ```
 
 ```text
@@ -115,11 +119,12 @@ Whenever you want to build, redesign, audit, or polish any web interface, simply
 
 The unified engine will automatically:
 1. Initialize `.planning/` memory and intake specifications.
-2. Select the surface mode (*Persuade* vs *Operate*) and token palette.
+2. Select the surface mode (*Persuade* vs *Operate*) and brand design system (e.g. Stripe, Linear, Vercel).
 3. Construct the hero at `1280x800` viewport standards.
 4. Apply figma.com/x.ai screen rhythm, real UI components, and micro-interactions.
 5. Harden edge cases, error states, and empty states using Impeccable playbooks.
-6. Verify via `sloplint.mjs` and `consistency.mjs` before handing back completed work.
+6. Enforce OpenDesign universal craft rules (laws of UX, 6-state coverage).
+7. Verify via `sloplint.mjs` and `consistency.mjs` before handing back completed work.
 
 ---
 

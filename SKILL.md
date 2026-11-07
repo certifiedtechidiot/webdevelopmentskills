@@ -1,23 +1,24 @@
 ---
 name: webdevelopment
 description: >-
-  Unified all-in-one web development skill combining Get Shit Done (GSD spec-driven engineering, phase planning, execution loop, state tracking), Hallmark (anti-AI-slop design system, strict design floor, material themes, sloplint), AI Design Skill (conversion architecture, landing page strategy, typography, spacing, UI polish), Taste Skill (tasteskill 2.5 figma.com & x.ai bar, screen-height rhythm, real product UI, micro-animations, shader moments), and Impeccable (director-level UI/UX craft, specialized playbooks: polish, critique, audit, bolder, quieter, distill, harden, animate, typeset, delight). Activates automatically whenever building, designing, refactoring, auditing, styling, or shipping web projects, websites, applications, components, or landing pages, or when the user invokes /webdevelopment.
+  Unified all-in-one web development skill combining Get Shit Done (GSD spec-driven engineering, phase planning, execution loop, state tracking), Hallmark (anti-AI-slop design system, strict design floor, material themes, sloplint), AI Design Skill (conversion architecture, landing page strategy, typography, spacing, UI polish), Taste Skill (tasteskill 2.5 figma.com & x.ai bar, screen-height rhythm, real product UI, micro-animations, shader moments), Impeccable (director-level UI/UX craft, specialized playbooks: polish, critique, audit, bolder, quieter, distill, harden, animate, typeset, delight), and OpenDesign (100+ battle-tested brand design systems including Stripe, Linear, Vercel, Apple, GitHub, Supabase, plus universal craft rules: accessibility, animation discipline, laws of UX, state coverage). Activates automatically whenever building, designing, refactoring, auditing, styling, or shipping web projects, websites, applications, components, or landing pages, or when the user invokes /webdevelopment.
 ---
 
-# Unified Web Development Engine (GSD + Hallmark + AI Design + Taste + Impeccable)
+# Unified Web Development Engine (GSD + Hallmark + AI Design + Taste + Impeccable + OpenDesign)
 
-This skill brings together the top five engineering and design frameworks into a single, cohesive workflow:
+This skill brings together the top six engineering and design frameworks into a single, cohesive workflow:
 1. **Get Shit Done (GSD)** — Phased, spec-driven engineering, execution verification, and project memory.
 2. **Hallmark** — The strict anti-AI-slop design floor, material themes, and `sloplint` linting.
 3. **AI Design Skill** — High-converting page structure, conversion copywriting, typography scale, and layout rhythm.
 4. **Taste Skill (tasteskill 2.5)** — The figma.com & x.ai quality bar, screen-height rhythm, real product UI, quiet micro-animations, and trade-specific shader moments.
 5. **Impeccable (v4.8)** — Director-level UI/UX craft, surface modes (Persuade/Operate/Read/Experience), and 19 specialized playbooks (`polish`, `audit`, `bolder`, `quieter`, `distill`, `harden`, `animate`, `delight`, `clarify`, `typeset`, `adapt`).
+6. **OpenDesign** — 100+ production brand design systems (Stripe, Linear, Vercel, Apple, GitHub, Supabase, Notion, Figma, Raycast, etc.) and universal craft rules (accessibility baseline, animation discipline, laws of UX, state coverage).
 
-When this skill is invoked via `/webdevelopment` (or during web development tasks), execute all 5 frameworks in unison.
+When this skill is invoked via `/webdevelopment` (or during web development tasks), execute all 6 frameworks in unison.
 
 ---
 
-## The 5 Integrated Pillars
+## The 6 Integrated Pillars
 
 ### 1. 🏗️ GSD Execution Loop (Engineering & Project Memory)
 Maintain persistent project context in `.planning/` to eliminate context degradation over long coding sessions:
@@ -87,6 +88,21 @@ Every interface generated must look custom-crafted, never generic or machine-mad
    * **`clarify`**: UX copy polish, clear labels, helpful error feedback.
 3. **Craft Floor**: Read [`./references/impeccable/craft-floor.md`](./references/impeccable/craft-floor.md) before making UI edits to ensure zero regression on accessibility, color contrast, and edge layout.
 
+### 6. 🌐 OpenDesign (100+ Production Design Systems & Universal Craft Rules)
+1. **100+ Brand Design System Blueprints**:
+   * Instant access to exact color palettes, typography scales, OpenType features, and multi-layer elevation models from top brands:
+     - **Fintech**: `stripe`, `linear-app`, `revolut`, `wise`, `coinbase`, `trading-terminal`
+     - **Developer Tools**: `vercel`, `github`, `supabase`, `cloudflare-kumo`, `hashicorp`, `posthog`, `warp`
+     - **AI Frontier**: `openai`, `claude`, `x-ai`, `perplexity`, `together-ai`, `mistral-ai`
+     - **Workspace**: `notion`, `figma`, `raycast`, `resend`, `slack`, `miro`, `superhuman`
+     - **Consumer/Tech**: `apple`, `airbnb`, `spotify`, `nike`, `tesla`, `spacex`
+   * Read specifications directly from [`./references/open-design/design-systems/<brand>/DESIGN.md`](./references/open-design/design-systems/).
+2. **Universal Craft Rules (`./references/open-design/craft/`)**:
+   * **Accessibility Baseline** (`accessibility-baseline.md`): WCAG AA compliance, 4.5:1 text contrast, visible focus rings.
+   * **Animation Discipline** (`animation-discipline.md`): Strict composite-only transforms, standard 150ms/250ms/400ms duration scales.
+   * **Laws of UX** (`laws-of-ux.md`): Fitts's law, Hick's law, and Jakob's law applied to interactive component design.
+   * **State Coverage** (`state-coverage.md`): Comprehensive 6-state coverage: *Default, Hover, Active, Focus, Disabled, Loading*.
+
 ---
 
 ## Step-by-Step Workflow
@@ -94,13 +110,13 @@ Every interface generated must look custom-crafted, never generic or machine-mad
 ```
 [Step 1: Intake & Scope Setup]      (GSD + AI Design Strategy + Impeccable Modes)
             │
-[Step 2: Token & Craft Floor]       (Hallmark Floor + Impeccable craft-floor.md)
+[Step 2: Brand & Token Selection]   (OpenDesign Brand Systems + Hallmark Tokens)
             │
 [Step 3: Build Hero (1280x800)]     (Hallmark + Taste Skill Screen Rhythm)
             │
 [Step 4: Phased Implementation]     (GSD Execution + Micro-Animations + Impeccable Polish)
             │
-[Step 5: Anti-Slop & Quality Audit] (Hallmark sloplint.mjs + Impeccable audit.md)
+[Step 5: Anti-Slop & Quality Audit] (Hallmark sloplint.mjs + OpenDesign craft rules)
             │
 [Step 6: State & Delivery]          (GSD STATE.md + Ship)
 ```
@@ -111,8 +127,9 @@ Every interface generated must look custom-crafted, never generic or machine-mad
 * For new builds: confirm primary action, user ICP, and brand tone in a single concise batch.
 * For redesigns: audit the existing page against [`./references/ai-design/redesign-audit.md`](./references/ai-design/redesign-audit.md), [`./references/hallmark/redesign.md`](./references/hallmark/redesign.md), and [`./references/impeccable/critique.md`](./references/impeccable/critique.md).
 
-### Step 2: Establish Tokens & Craft Floor
-* Review [`./references/impeccable/craft-floor.md`](./references/impeccable/craft-floor.md) for non-negotiable standards.
+### Step 2: Establish Brand & Visual Tokens
+* Pick a matching visual world from [`./references/open-design/design-systems/`](./references/open-design/design-systems/) (e.g., Stripe, Linear, Vercel, Supabase) or declare custom tokens.
+* Review [`./references/impeccable/craft-floor.md`](./references/impeccable/craft-floor.md) and [`./references/open-design/craft/`](./references/open-design/craft/).
 * Declare the project's token palette in `:root` (or Tailwind theme variables):
   - Primary, neutral, background, surface, and accent tokens.
   - Distinctive typography pairings (editorial serif + grotesque, or geometric sans + mono accents).
@@ -126,11 +143,12 @@ Every interface generated must look custom-crafted, never generic or machine-mad
 * Implement subsequent sections (features, proof, pricing, interactive components) incrementally.
 * Apply Taste micro-interactions: card hover lifts, smooth photo zooms, step buttons, and card diagram loops.
 * Apply Impeccable hardening: empty states, error fallbacks, edge-case labels, loading skeletons.
+* Ensure complete 6-state coverage for all controls: *Default, Hover, Active, Focus, Disabled, Loading*.
 * Enforce equal left and right content margins across all viewports (`1440`, `1024`, `768`, `390`).
 
 ### Step 5: Automated Anti-Slop Audit & Testing
 * Run `node ./scripts/sloplint.mjs <target> --render` to catch layout, typography, or style regressions.
-* Run Impeccable technical checks from [`./references/impeccable/audit.md`](./references/impeccable/audit.md) (contrast ratios, focus rings, responsive wrap).
+* Run Impeccable technical checks from [`./references/impeccable/audit.md`](./references/impeccable/audit.md) and OpenDesign craft rules from [`./references/open-design/craft/`](./references/open-design/craft/).
 * Run project test suites or build commands (`npm run build`, `npm test`) to guarantee zero compile or runtime warnings.
 
 ### Step 6: Update State & Ship
@@ -141,6 +159,9 @@ Every interface generated must look custom-crafted, never generic or machine-mad
 
 ## Reference Guides
 
+* **OpenDesign System & Craft Suite**: [`./references/open-design/`](./references/open-design/)
+  * Brand Design Systems (100+): [`./references/open-design/design-systems/`](./references/open-design/design-systems/)
+  * Universal Craft Rules: [`./references/open-design/craft/`](./references/open-design/craft/)
 * **Impeccable Reference Suite**: [`./references/impeccable/`](./references/impeccable/)
   * Craft Floor: [`./references/impeccable/craft-floor.md`](./references/impeccable/craft-floor.md)
   * UX Critique: [`./references/impeccable/critique.md`](./references/impeccable/critique.md)
